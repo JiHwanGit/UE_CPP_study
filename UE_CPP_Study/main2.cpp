@@ -1,23 +1,16 @@
 #include <iostream>
+#include "state.h"
+#include "Transition.h"
+
+#include <vector>
 
 using namespace std;
 
 
-class State {
-public:
-	int ID;
-	string Name;
-};
 
-class Transition {
-public:
-	int CurrentStatus;
-	string Condition;
-	int NextState;
-};
-
-int main() {
-	State State[4];
-	Transition Transition[5];
+int main()
+{
+	vector<State> TestState;
+	TestState[1] = State();
 	return 0;
 }
